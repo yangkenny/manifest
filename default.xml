@@ -1,0 +1,27 @@
+<manifest>
+    <!-- ssh mothed for repository. -->
+    <!-- 
+    <remote name="aosp"
+        fetch="ssh://git@github.com/ZoroZeng/" />
+    -->
+    <remote name="mygit"
+        fetch="ssh@github.com/yangkenny" />
+
+    <!-- if you want to fetch just a branch from repository, set sync-c="true". -->
+    <default revision="main"
+        remote="mygit"
+        sync-c="true"   
+        sync-j="4" />
+
+    <project path="manifest" name="manifest" />
+
+    <project remote="mygit" path="gita" name="gita" />
+    <project remote="mygit" path="gitb" name="gitb" />
+
+<!--
+    <project remote="mygit" revision="master" path="sonar-cxx" name="sonar-cxx" />
+    <project remote="mygit" revision="master" sync-c="true" name="Android-Examples" sync-j="4"/>
+-->
+
+
+</manifest>
