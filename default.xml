@@ -5,7 +5,7 @@
         fetch="ssh://git@github.com/ZoroZeng/" />
     -->
     <remote name="mygit"
-        fetch="https://github.com/yangkenny/" />
+        fetch="https://github.com/yangkenny/" pushurl="ssh://git@github.com/yangkenny" />
 
     <!-- if you want to fetch just a branch from repository, set sync-c="true". -->
     <default revision="main"
